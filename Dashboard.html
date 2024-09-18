@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Horizontal_bar.css">
+    <script src="JavaScript/Slideshow.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="Dashboard.html">Home</a></li>
+        <li><a href="tentang.html">About Us</a></li>
+      </ul>
+
+      <!--Container for the image gallery-->
+      <div class="container">
+
+        <!--Full width-image with number text-->
+        <div class="mySlides">
+            <img src="Foto dan video/pexels-menara pisa.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="Foto dan video/pexels-trek balap.jpg" style="width:100%">
+        </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+         <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="Foto dan video/pexels-menara pisa.jpg" style="width:100%" onclick="currentSlide(1)" alt="Menara Pisa">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Foto dan video/pexels-trek balap.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trek Balap">
+          </div>
+        </div>
+      </div>
+    </nav>
+      <h1>Berita Terkini</h1>
+      <div class="gallery">
+        <a target="_blank" href="Foto dan video/pexels-menara pisa.jpg">
+          <img src="Foto dan video/pexels-menara pisa.jpg" alt="Italian Trulli" width="300" height="200"
+            style="Float: left; margin-right: 10px;"/>
+        </a>
+        <h3>Menara Pisa</h3>
+        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div><br>
+        <a href="beritadetil1.html">Selengkapnya</a>
+      </div>
+      <div style="clear: left;"></div>
+
+      <div class="gallery">
+        <a target="_blank" href="Foto dan video/pexels-trek balap.jpg">
+          <img src="Foto dan video/pexels-trek balap.jpg" alt="Italian Trulli" width="300" height="200"
+          style="Float: left; margin-right: 10px;"/>
+        </a>
+        <h3>Trek Balapan</h3>
+        <div class="desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div><br>
+        <a href="beritadetil2.html">Selengkapnya</a>
+    </div>
+    <div style="clear: left;"></div>
+</body>
+<footer><br>
+    <ul>
+    <li><a href="https://www.google.com/">Google</a></li>
+    <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+</footer>
+</html>
